@@ -1,22 +1,22 @@
 # Isometric 2D Combat MVP (Single Prompt Test)
 
-Este repositorio contiene una prueba de un Producto Mínimo Viable (MVP) para un juego isométrico 2D de combate en arenas de 3v3 (Personajes vs Enemigos).
-El objetivo de este proyecto consistía en evaluar y probar la creación de toda la estructura, mecánicas y el juego funcional mediante **un único prompt** detallado utilizado con un agente de IA.
+This repository contains a test of a Minimum Viable Product (MVP) for a 3v3 isometric 2D combat arena game (Characters vs Enemies).
+The goal of this project was to evaluate and test the creation of the entire structure, mechanics, and functional gameplay using a **single detailed prompt** with an AI agent.
 
-## Características del MVP:
-- **Vista Isométrica 2D**: Perspectiva y renderizado de mapa utilizando un tilemap como grid.
-- **Sistema de Combate 3v3**: Peleas en arena con guerreros de múltiples tipos (melee, magos, arqueros).
-- **IA y FSM (Finite State Machine)**: Lógica básica en la que los distintos enemigos y protagonistas saben atacar, huir, y priorizar a quién atacar según sus stats.
-- **Knockback y Físicas Básicas**: Sistema de empuje para expulsar a un rival de la arena hacia la lava, que actúa a modo de 'muerte instantánea'.
-- **Sistema de Power-ups**: Generación aleatoria de bufos (fuerza, velocidad, sanación o resistencia al knockback).
-- **Stack Técnico**: Desarrollo basado en JavaScript nativo combinado con Phaser 3 y gestionado localmente por Vite.
+## MVP Features:
+- **2D Isometric View**: Perspective and map rendering using a tilemap as a grid.
+- **3v3 Combat System**: Arena fights with multiple warrior classes (melee, mages, archers).
+- **AI and FSM (Finite State Machine)**: Basic logic where different enemies and protagonists know how to attack, flee, and prioritize targets based on their stats.
+- **Knockback and Basic Physics**: A push system to knock opponents out of the arena into the lava, which acts as 'instant death'.
+- **Power-up System**: Random generation of buffs (strength, speed, healing, or knockback resistance).
+- **Tech Stack**: Developed with native JavaScript combined with Phaser 3 and running locally via Vite.
 
-## Cómo ejecutar localmente
-1. Clona el repositorio
-2. Navega a la carpeta `/game`: \`cd game\`
-3. Instala las dependencias: \`npm install\`
-4. Corre el proyecto en modo desarrollo: \`npm run dev\`
+## How to run locally
+1. Clone the repository
+2. Navigate to the `/game` folder: `cd game`
+3. Install dependencies: `npm install`
+4. Run the project in development mode: `npm run dev`
 
-### Notas de Desarrollo
-Este prototipo es completamente funcional; en versiones recientes se ha ajustado el tiempo y el balance para asegurar unas duraciones de combate más entretenidas.
-Todos los assets, animaciones y mecánicas fueron implementados basándose puramente en las especificaciones del diseño proporcionado y el prompt original.
+### Development Notes
+This prototype is completely functional; in recent versions, the battle timing and balance have been tweaked to ensure more entertaining combat durations.
+All assets, animations, and mechanics were implemented based purely on the design specifications provided in the original prompt.
