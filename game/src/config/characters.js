@@ -1,0 +1,111 @@
+// Character definitions for the 6 MVP characters
+export const CHARACTERS = {
+    Human_Bow: {
+        name: 'Arquero',
+        key: 'Human_Bow',
+        type: 'ranged',
+        team: 'player',
+        hp: 120,
+        speed: 130,
+        attackDamage: 12,
+        attackRange: 200,
+        attackSpeed: 800,
+        knockbackForce: 80,
+        attackDamage2: 18,
+        knockbackForce2: 120,
+        color: 0x44aa44,
+        description: 'Rápido y letal a distancia'
+    },
+    Human_Mage: {
+        name: 'Mago',
+        key: 'Human_Mage',
+        type: 'ranged',
+        team: 'player',
+        hp: 100,
+        speed: 110,
+        attackDamage: 15,
+        attackRange: 180,
+        attackSpeed: 1000,
+        knockbackForce: 100,
+        attackDamage2: 25,
+        knockbackForce2: 160,
+        color: 0x6644cc,
+        description: 'Gran poder mágico, frágil'
+    },
+    Human_Soldier_Sword_Shield: {
+        name: 'Guerrero',
+        key: 'Human_Soldier_Sword_Shield',
+        type: 'melee',
+        team: 'player',
+        hp: 180,
+        speed: 100,
+        attackDamage: 18,
+        attackRange: 60,
+        attackSpeed: 600,
+        knockbackForce: 120,
+        attackDamage2: 28,
+        knockbackForce2: 200,
+        color: 0x4488cc,
+        description: 'Tanque resistente, gran knockback'
+    },
+    Monster_Orc_Axe: {
+        name: 'Orco Hacha',
+        key: 'Monster_Orc_Axe',
+        type: 'melee',
+        team: 'enemy',
+        hp: 160,
+        speed: 95,
+        attackDamage: 22,
+        attackRange: 65,
+        attackSpeed: 700,
+        knockbackForce: 140,
+        attackDamage2: 30,
+        knockbackForce2: 220,
+        color: 0xcc4444,
+        description: 'Brutal y destructivo'
+    },
+    Monster_Orc_Fist: {
+        name: 'Orco Puños',
+        key: 'Monster_Orc_Fist',
+        type: 'melee',
+        team: 'enemy',
+        hp: 190,
+        speed: 90,
+        attackDamage: 16,
+        attackRange: 55,
+        attackSpeed: 500,
+        knockbackForce: 160,
+        attackDamage2: 24,
+        knockbackForce2: 250,
+        color: 0xcc6644,
+        description: 'Lento pero empuja mucho'
+    },
+    Monster_Goblin_Bow: {
+        name: 'Goblin Arquero',
+        key: 'Monster_Goblin_Bow',
+        type: 'ranged',
+        team: 'enemy',
+        hp: 95,
+        speed: 140,
+        attackDamage: 10,
+        attackRange: 190,
+        attackSpeed: 700,
+        knockbackForce: 70,
+        attackDamage2: 16,
+        knockbackForce2: 110,
+        color: 0x88cc44,
+        description: 'Escurridizo y rápido'
+    }
+};
+
+// Animation definitions common to all characters
+export const ANIMATIONS = {
+    idle: { suffix: 'Idle-Sheet', frames: 6, frameRate: 8, repeat: -1 },
+    walk: { suffix: 'Walk-Sheet', frames: 8, frameRate: 10, repeat: -1 },
+    attack1: { suffix: 'Attack1-Sheet', frames: 8, frameRate: 14, repeat: 0 },
+    attack2: { suffix: 'Attack2-Sheet', frames: 8, frameRate: 12, repeat: 0 },
+    block: { suffix: 'Block-Sheet', frames: 6, frameRate: 10, repeat: 0 },
+    hurt: { suffix: 'Hurt-Sheet', frames: 4, frameRate: 10, repeat: 0 },
+    death: { suffix: 'Death-Sheet', frames: 8, frameRate: 8, repeat: 0 },
+    jump_fall: { suffix: 'Jump_Fall-Sheet', frames: 6, frameRate: 8, repeat: 0 }
+};
